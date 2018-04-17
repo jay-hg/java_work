@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.study.messagebox.MainActivity" >
+
+    <TextView
+        android:id="@+id/inputNumPlease"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:textColor="#FF0000"
+        android:text="@string/_inputPhoneNumber" />
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/inputNumPlease"
+        android:layout_alignEnd="@id/inputNumPlease"
+        android:layout_below="@+id/inputNumPlease"
+        android:inputType="number" />
+
+        <requestFocus />
+    
+
+    <TextView
+        android:id="@+id/inputMesPlease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNumber"
+        android:layout_alignStart="@+id/etNumber"
+        android:layout_below="@+id/etNumber"
+        android:textSize="20sp"
+        android:textColor="#FF0000"
+        android:text="@string/_inputMessage" />
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/inputNumPlease"
+        android:layout_alignEnd="@+id/inputNumPlease"
+        android:layout_below="@+id/inputMesPlease"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:ems="10" 
+        />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_alignRight="@id/etMessage"
+        android:layout_alignEnd="@id/etMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etMessage"
+        android:text="@string/_butSend" />
+
+</RelativeLayout>

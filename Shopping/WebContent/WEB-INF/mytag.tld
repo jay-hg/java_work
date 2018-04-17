@@ -1,0 +1,13 @@
+<taglib>
+<tlibversion>1.0</tlibversion>
+<jspversion>1.1</jspversion>
+<shortname>mytag</shortname>
+<uri>/testTag</uri>
+<info>自定义标签测试</info>
+<tag>
+      <name>hello</name>
+      <tagclass>jsptag.Hello</tagclass>
+      <bodycontent>empty</bodycontent>
+      <info>自定义标签测试</info>
+</tag>
+</taglib>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Shopping</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+      <servlet-name>FileUpload</servlet-name>
+      <servlet-class>com.summer.shopping.FileUpload</servlet-class>
+      <init-param>
+          <param-name>imguploadpath</param-name>
+          <param-value>E:\\java_work\\Shopping\\WebContent\\images\\</param-value>
+      </init-param>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>FileUpload</servlet-name>
+      <url-pattern>/FileUpload</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>Report</servlet-name>
+      <servlet-class>com.summer.shopping.report.Report</servlet-class>
+      <init-param>
+          <param-name>reportpath</param-name>
+          <param-value>E:\\java_work\\Shopping\\WebContent\\admin\\images\\report\\</param-value>
+      </init-param>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>Report</servlet-name>
+      <url-pattern>/Report</url-pattern>
+  </servlet-mapping>
+</web-app>
